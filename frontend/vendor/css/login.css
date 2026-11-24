@@ -1,0 +1,771 @@
+/* ===================================================
+   GOOGLE FONT
+=================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===================================================
+   RESET
+=================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+
+    color:#1f2937;
+
+    background:
+    linear-gradient(
+        135deg,
+        #065f46 0%,
+        #10b981 45%,
+        #34d399 100%
+    );
+
+    overflow:hidden;
+
+    position:relative;
+}
+
+/* ===================================================
+   BACKGROUND DECORATION
+=================================================== */
+
+body::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:550px;
+    height:550px;
+
+    background:rgba(255,255,255,.12);
+
+    border-radius:50%;
+
+    top:-220px;
+    left:-180px;
+
+    filter:blur(15px);
+}
+
+body::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    background:rgba(255,255,255,.10);
+
+    border-radius:50%;
+
+    bottom:-220px;
+    right:-180px;
+
+    filter:blur(18px);
+}
+
+/* ===================================================
+   LOGIN CARD
+=================================================== */
+
+.container{
+
+    position:relative;
+    z-index:10;
+
+    width:100%;
+    max-width:460px;
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    padding:45px;
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.18);
+
+    animation:fadeUp .8s ease;
+}
+
+/* ===================================================
+   ANIMATION
+=================================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+
+    }
+
+}
+
+/* ===================================================
+   LOGO
+=================================================== */
+
+.logo{
+
+    text-align:center;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    color:#166534;
+
+    margin-bottom:8px;
+
+}
+
+.logo span{
+
+    color:#10b981;
+
+}
+
+/* ===================================================
+   TITLE
+=================================================== */
+
+.container h2{
+
+    text-align:center;
+
+    font-size:24px;
+
+    font-weight:600;
+
+    color:#1f2937;
+
+    margin-bottom:35px;
+
+}
+
+/* ===================================================
+   AVATAR
+=================================================== */
+
+.avatar{
+
+    width:110px;
+
+    height:110px;
+
+    margin:0 auto 35px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:52px;
+
+    color:white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #22c55e,
+            #15803d
+        );
+
+    box-shadow:
+
+        0 15px 35px rgba(22,163,74,.35),
+
+        inset 0 2px 6px rgba(255,255,255,.35);
+
+    transition:.35s;
+
+}
+
+.avatar:hover{
+
+    transform:
+
+        translateY(-4px)
+
+        scale(1.05);
+
+    box-shadow:
+
+        0 22px 45px rgba(22,163,74,.45);
+
+}
+
+/* ===================================================
+   FORM
+=================================================== */
+
+form{
+
+    width:100%;
+
+}
+
+/* ===================================================
+   FOOTER
+=================================================== */
+
+.footer{
+
+    margin-top:35px;
+
+    text-align:center;
+
+    font-size:13px;
+
+    color:#6b7280;
+
+    letter-spacing:.5px;
+
+}
+
+/* ===================================================
+   TOP BORDER
+=================================================== */
+
+.container::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:6px;
+
+    border-radius:
+
+        24px
+
+        24px
+
+        0
+
+        0;
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            #16a34a,
+
+            #22c55e,
+
+            #4ade80
+
+        );
+
+}
+
+/* ===================================================
+   FORM GROUP
+=================================================== */
+
+.form-group{
+
+    margin-bottom:22px;
+
+}
+
+.form-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#374151;
+
+}
+
+/* ===================================================
+   INPUT
+=================================================== */
+
+.form-group input,
+.form-group select{
+
+    width:100%;
+
+    height:54px;
+
+    padding:0 18px;
+
+    font-size:15px;
+
+    font-family:'Poppins',sans-serif;
+
+    color:#1f2937;
+
+    background:#f9fafb;
+
+    border:2px solid #e5e7eb;
+
+    border-radius:14px;
+
+    outline:none;
+
+    transition:.30s;
+
+}
+
+/* ===================================================
+   PLACEHOLDER
+=================================================== */
+
+.form-group input::placeholder{
+
+    color:#9ca3af;
+
+}
+
+/* ===================================================
+   FOCUS
+=================================================== */
+
+.form-group input:focus,
+.form-group select:focus{
+
+    background:white;
+
+    border-color:#16a34a;
+
+    box-shadow:
+
+        0 0 0 5px
+
+        rgba(22,163,74,.15);
+
+}
+
+/* ===================================================
+   HOVER
+=================================================== */
+
+.form-group input:hover,
+.form-group select:hover{
+
+    border-color:#86efac;
+
+}
+
+.form-group select{
+
+    cursor:pointer;
+
+}
+
+/* ===================================================
+   BUTTON
+=================================================== */
+
+.btn{
+
+    width:100%;
+
+    height:56px;
+
+    margin-top:10px;
+
+    border:none;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:white;
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            #16a34a,
+
+            #22c55e
+
+        );
+
+    transition:.30s;
+
+    box-shadow:
+
+        0 12px 28px
+
+        rgba(22,163,74,.28);
+
+}
+
+.btn:hover{
+
+    transform:
+
+        translateY(-2px);
+
+    box-shadow:
+
+        0 18px 35px
+
+        rgba(22,163,74,.35);
+
+}
+
+.btn:active{
+
+    transform:scale(.98);
+
+}
+
+.btn:disabled{
+
+    opacity:.65;
+
+    cursor:not-allowed;
+
+    transform:none;
+
+}
+
+/* ===================================================
+   BUTTON LOADING
+=================================================== */
+
+.btn.loading{
+
+    pointer-events:none;
+
+    opacity:.9;
+
+}
+
+/* ===================================================
+   SPINNER
+=================================================== */
+
+.spinner{
+
+    display:inline-block;
+
+    width:18px;
+
+    height:18px;
+
+    margin-right:10px;
+
+    border:3px solid rgba(255,255,255,.4);
+
+    border-top:3px solid white;
+
+    border-radius:50%;
+
+    animation:spin .7s linear infinite;
+
+    vertical-align:middle;
+
+}
+
+@keyframes spin{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ===================================================
+   ERROR MESSAGE
+=================================================== */
+
+.error-message{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    margin-top:8px;
+
+    font-size:13px;
+
+    font-weight:500;
+
+    color:#dc2626;
+
+    opacity:0;
+
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:all .3s ease;
+
+}
+
+.error-message.show{
+
+    opacity:1;
+
+    max-height:30px;
+
+}
+
+/* ===================================================
+   ERROR INPUT
+=================================================== */
+
+input.error,
+select.error{
+
+    border-color:#ef4444 !important;
+
+    background:#fef2f2;
+
+    box-shadow:
+
+        0 0 0 4px
+
+        rgba(239,68,68,.12);
+
+}
+
+
+/* ===================================================
+   ERROR FOCUS
+=================================================== */
+
+input.error:focus,
+select.error:focus{
+
+    border-color:#dc2626 !important;
+
+    box-shadow:
+
+        0 0 0 5px
+
+        rgba(220,38,38,.18);
+
+}
+
+/* ===================================================
+   CHROME AUTOFILL
+=================================================== */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus{
+
+    -webkit-box-shadow:
+
+        0 0 0 1000px #ffffff inset;
+
+    -webkit-text-fill-color:#1f2937;
+
+    transition:
+
+        background-color 9999s;
+
+}
+
+/* ===================================================
+   GLOBAL TRANSITION
+=================================================== */
+
+input,
+select,
+button,
+.avatar,
+.container{
+
+    transition:
+
+        .3s ease;
+
+}
+
+/* ===================================================
+   TEXT SELECTION
+=================================================== */
+
+::selection{
+
+    background:#22c55e;
+
+    color:white;
+
+}
+
+/* ===================================================
+   SCROLLBAR
+=================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#ecfdf5;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#22c55e;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#15803d;
+
+}
+
+/* ===================================================
+   TABLET
+=================================================== */
+
+@media (max-width:768px){
+
+    body{
+
+        padding:25px;
+
+    }
+
+    .container{
+
+        padding:35px;
+
+    }
+
+}
+
+/* ===================================================
+   MOBILE
+=================================================== */
+
+@media (max-width:480px){
+
+    body{
+
+        padding:20px;
+
+    }
+
+    .container{
+
+        padding:28px;
+
+        border-radius:20px;
+
+    }
+
+    .logo{
+
+        font-size:28px;
+
+    }
+
+    .container h2{
+
+        font-size:21px;
+
+    }
+
+    .avatar{
+
+        width:90px;
+
+        height:90px;
+
+        font-size:42px;
+
+    }
+
+    .form-group input,
+    .form-group select{
+
+        height:50px;
+
+    }
+
+    .btn{
+
+        height:52px;
+
+    }
+
+}
+
+/* ===================================================
+   CARD HOVER
+=================================================== */
+
+.container:hover{
+
+    transform:
+
+        translateY(-3px);
+
+}
+
